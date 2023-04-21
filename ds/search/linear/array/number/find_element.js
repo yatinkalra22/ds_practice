@@ -8,15 +8,13 @@ const getIndexOfElement = (inputArray, searchElement) => {
   }
 
   for (let index = 0; index < inputArray.length; index++) {
-    if (inputArray[index] === searchElement) {
-      return index;
-    }
+    if (inputArray[index] === searchElement) return index;
   }
   return -1;
 };
 
 //exists
-console.log(getIndexOfElement([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 2)); 
+console.log(getIndexOfElement([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 2));
 //doesn't exists
 console.log(getIndexOfElement([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 11));
 //empty array
