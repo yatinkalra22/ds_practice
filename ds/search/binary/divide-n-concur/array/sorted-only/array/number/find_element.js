@@ -1,6 +1,9 @@
 // loop the array
 // if element found return index
 // if not return -1
+// Complexity
+//  best = O(1)
+//  worst/ average = O(log n)
 
 function findIndexOfSortedArray(inputArray, searchElement) {
   //handling array length
@@ -51,3 +54,4 @@ console.log(findIndexOfSortedArray([0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 11], 20));
 console.log(findIndexOfSortedArray([0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 11], -1));
 // element doesn't exist in the list
 console.log(findIndexOfSortedArray([0, 1, 2, 3, 4, 10, 11], 6));
+console.log(findIndexOfSortedArray([5,6,10,13,14,18,30,34,35,37,40,44,64,79,84,86,95,96,98,99], 95));
