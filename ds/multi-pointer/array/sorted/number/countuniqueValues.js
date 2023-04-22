@@ -6,14 +6,10 @@ const countUniqueValues = (inputArray) => {
   if (!inputArray[0]) return 0;
   if (inputArray.length === 1) return 1;
   let left = 0;
-  let right = 1;
-  for (let counter = right; counter < inputArray.length; counter++) {
-    if (inputArray[left] === inputArray[right]) {
-      right++;
-    } else {
+  for (let right = 1; right < inputArray.length; right++) {
+    if (inputArray[left] !== inputArray[right]) {
       left++;
       inputArray[left] = inputArray[right];
-      right++;
     }
   }
   return left + 1;
