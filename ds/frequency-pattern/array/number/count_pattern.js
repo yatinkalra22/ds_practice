@@ -13,7 +13,7 @@ const compareTwoArraysFrequencyPattern = (array1, array2) => {
   }
   for (let element = 0; element < array2.length; element++) {
     const value = array2[element];
-    object2[value] = object2[value] ? object2[value] + 1 : 1;
+    object2[value] = (object2[value] || 0) + 1;
   }
 
   for (let element in object1) {
