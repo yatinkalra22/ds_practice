@@ -1,6 +1,7 @@
 // loop the array
 // if element found return index
 // if not return -1
+// complexity O(n)
 
 const getIndexOfElement = (inputArray, searchElement) => {
   if (inputArray.length < 1) {
