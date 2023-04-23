@@ -7,12 +7,9 @@ function matchSubsequence(subStr, str) {
   }
 
   let left = 0;
-  if (str[left] === subStr[left]) left += 1;
-  for (let right = 1; right < str.length; right++) {
-    if (left === subStr.length - 1) return true;
-    if (str[right] === subStr[left]) {
-      left++;
-    }
+  for (let right = 0; right < str.length; right++) {
+    if (str[right] === subStr[left]) left++;
+    if (left === subStr.length) return true;
   }
 
   return false;
